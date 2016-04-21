@@ -5,6 +5,9 @@ MAINTAINER Sergey Sadovoi <sergey@hope.ua>
 ENV TIMEZONE Europe/Kiev
 
 RUN \
+    # Add edge repo
+    echo '@edge http://dl-cdn.alpinelinux.org/alpine/edge/main' >> /etc/apk/repositories
+
     # Install Bash
     apk --no-cache add bash && \
 
