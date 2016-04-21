@@ -4,7 +4,7 @@
 
 Base image for HopeUA containers. Alpine 3.3
 
-– Add Alpine edge repository
+- Add Alpine edge repository
 - Install bash
 - Set the timezone to Europe/Kiev  
 
