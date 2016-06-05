@@ -2,7 +2,7 @@
 
 [![Image name](https://img.shields.io/badge/docker-hope/base--alpine-brightgreen.svg)](https://hub.docker.com/r/hope/base-alpine/)
 
-Base image for HopeUA containers. Alpine 3.3
+Base image for HopeUA containers. Alpine 3.4
 
 - Add Alpine edge repository
 - Install bash

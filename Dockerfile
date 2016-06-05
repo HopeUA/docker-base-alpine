@@ -1,8 +1,9 @@
-FROM alpine:3.3
+FROM alpine:3.4
 
 MAINTAINER Sergey Sadovoi <sergey@hope.ua>
 
-ENV TIMEZONE Europe/Kiev
+ENV \
+    TIMEZONE=Europe/Kiev
 
 RUN \
     # Add edge repo
