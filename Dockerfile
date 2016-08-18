@@ -11,6 +11,9 @@ RUN \
     echo '@edge http://dl-cdn.alpinelinux.org/alpine/edge/community' >> /etc/apk/repositories && \
     echo '@edge http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories && \
 
+    # Update packages
+    apk --no-cache upgrade && \
+
     # Install Bash
     apk --no-cache add bash && \
 
