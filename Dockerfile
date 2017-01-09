@@ -17,6 +17,10 @@ RUN \
     # Install Bash
     apk --no-cache add bash && \
 
+    # Install SSL
+    # Alpine 3.5 switched from OpenSSL to LibreSSL
+    apk --no-cache add libressl && \
+
     # Set timezone
     apk --no-cache add tzdata && \
     cp /usr/share/zoneinfo/${TIMEZONE} /etc/localtime && \
