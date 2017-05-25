@@ -1,4 +1,4 @@
-FROM alpine:3.5
+FROM alpine:3.6
 
 MAINTAINER Sergey Sadovoi <sergey@hope.ua>
 
@@ -19,7 +19,7 @@ RUN \
 
     # Install SSL
     # Alpine 3.5 switched from OpenSSL to LibreSSL
-    apk --no-cache add libressl && \
+    apk --no-cache add libressl ca-certificates && \
 
     # Set timezone
     apk --no-cache add tzdata && \
