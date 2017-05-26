@@ -1,7 +1,5 @@
 FROM alpine:3.6
 
-MAINTAINER Sergey Sadovoi <sergey@hope.ua>
-
 ENV \
     TIMEZONE=Europe/Kiev
 
