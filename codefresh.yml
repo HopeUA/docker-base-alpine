@@ -15,6 +15,7 @@ steps:
     commands:
       - "echo -n 'Apline release version: '"
       - "cat /etc/alpine-release"
+      - "date"
     on_success:
       metadata:
         set:
@@ -32,3 +33,14 @@ steps:
     candidate: "${{Build}}"
     tag: "${{CF_BRANCH}}"
     registry: dockerhub
+
+  PushLatest:
+    title: Pushing latest to Docker Hub
+    type: push
+    candidate: "${{Build}}"
+    tag: latest
+    registry: dockerhub
+    when:
+      branch:
+        only:
+          - "3.6"
