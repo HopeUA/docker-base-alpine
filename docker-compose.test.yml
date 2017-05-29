@@ -1,3 +1,0 @@
-sut:
-  build: .
-  command: -c "cat /etc/alpine-release"

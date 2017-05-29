@@ -1,6 +1,7 @@
-# Base docker image
+# Alpine base docker image
 
-[![Image name](https://img.shields.io/badge/docker-hope/base--alpine-brightgreen.svg)](https://hub.docker.com/r/hope/base-alpine/)
+[![Codefresh build status]( https://g.codefresh.io/api/badges/build?repoOwner=HopeUA&repoName=docker-base-alpine&branch=3.6&pipelineName=main&accountName=HopeUA&type=cf-1)]( https://g.codefresh.io/repositories/HopeUA/docker-base-alpine/builds?filter=trigger:build;branch:3.6;service:592bd9c5f9949d0001123063~main)
+![Github](https://img.shields.io/github/stars/HopeUA/docker-base-alpine.svg?style=social&label=Star)
 
 Minimalistic base image to create other images. Based on latest stable **Alpine 3.6** release.
 Contains **bash** shell as default.
@@ -18,23 +19,23 @@ Current and previous versions of Alpine are maintained. When new version appears
 
 Just run to get the bash prompt
 
-    docker run -it --rm hope/base-alpine
+    docker run -it --rm hope/alpine
 
 Use latest version as base image for your own images
 
-    FROM hope/base-alpine 
+    FROM hope/alpine 
 
 Or use specific version as base image
 
-    FROM hope/base-alpine:3.6
-    FROM hope/base-alpine:3
+    FROM hope/alpine:3.6
+    FROM hope/alpine:3
 
 ## Timezone
 
 [Available timezones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)  
 Set timezone in container with environment variable `TZ` in command line
 
-    docker run -it --rm -e TZ=America/Chicago hope/base-alpine
+    docker run -it --rm -e TZ=America/Chicago hope/alpine
     
 Or in your Dockerfile
 
