@@ -1,6 +1,6 @@
 # Alpine base docker image
 
-[![Codefresh build status]( https://g.codefresh.io/api/badges/build?repoOwner=HopeUA&repoName=docker-base-alpine&branch=3.6&pipelineName=main&accountName=HopeUA&type=cf-1)]( https://g.codefresh.io/repositories/HopeUA/docker-base-alpine/builds?filter=trigger:build;branch:3.6;service:592bd9c5f9949d0001123063~main) [![Github](https://img.shields.io/github/stars/HopeUA/docker-base-alpine.svg?style=social&label=Star)](https://github.com/HopeUA/docker-base-alpine)
+[![Github](https://img.shields.io/github/stars/HopeUA/docker-base-alpine.svg?style=social&label=Star)](https://github.com/HopeUA/docker-base-alpine)
 
 Minimalistic base image to create other images. Based on latest stable **Alpine 3.6** release.
 Contains **bash** shell as default.
