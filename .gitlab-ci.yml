@@ -1,0 +1,15 @@
+image: docker
+stages:
+  - build
+  - push
+
+build_image:
+  stage: build
+  script: 
+    - docker build -t dr.hope.ua/docker/alpine .
+
+# PushToHopeRegistry:
+#   stage: push
+#   script:
+
+# PushToDockerHub:
