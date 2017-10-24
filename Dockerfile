@@ -26,5 +26,3 @@ RUN \
 
     # Clean
     rm -rf /var/cache/apk/*
-
-ENTRYPOINT ["bash"]
